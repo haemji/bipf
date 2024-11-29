@@ -1,5 +1,7 @@
 "use strict";
 
+
+
 const dsnParam = {
   map: {
     marker_icon: "assets/img/map-marker.png",
@@ -1543,3 +1545,75 @@ function sidebarOptions() {
   document.body.classList.toggle('dsn-show-sidebar');
 }
 //# sourceMappingURL=custom.js.map
+
+// 상단 하단 include 처리
+(function () {
+  function includeHtml() {
+      const includeTarget = document.querySelectorAll('.includeJs:not([data-loaded="true"])'); // 이미 로드된 요소 제외
+      includeTarget.forEach(function (el) {
+          const targetFile = el.dataset.includeFile;
+          if (targetFile) {
+              let xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function () {
+                  if (this.readyState === XMLHttpRequest.DONE) {
+                      if (this.status === 200) {
+                          el.innerHTML = this.responseText;
+                          el.setAttribute('data-loaded', 'true'); // 로드 완료 표시
+                      } else if (this.status === 404) {
+                          el.innerHTML = 'Include not found.';
+                      }
+                  }
+              };
+              xhttp.open('GET', targetFile, true);
+              xhttp.send();
+          }
+      });
+  }
+
+  // 최초 실행
+  includeHtml();
+
+  // DOM 변경을 감지하여 새로 추가된 includeJs 처리
+  const observer = new MutationObserver(function () {
+      includeHtml();
+  });
+
+  // body 요소 감지 시작 (변경 사항 추적)
+  observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+  });
+})();
+
+var $frame  = $('.sly');
+		var $slidee = $frame.children('ul').eq(0);
+		var $wrap   = $frame.parent();
+
+		if ($frame.length > 0){
+			$frame.sly({
+				horizontal: 1,
+				itemNav: 'basic',
+				smart: 1,
+				activateOn: 'click',
+				mouseDragging: 1,
+				touchDragging: 1,
+				releaseSwing: 1,
+				startAt: 0,
+				scrollBar: $wrap.find('.scrollbar'),
+				scrollBy: 0,
+				activatePageOn: 'click',
+				speed: 1000,
+				elasticBounds: 2,
+				dragHandle: 2,
+				dynamicHandle: 1,
+				clickBar: 0,
+
+				// Buttons
+				prevPage: $wrap.find('.prev'),
+				nextPage: $wrap.find('.next')
+			});
+
+			$(window).resize(function(){
+				$frame.sly('reload');
+			});
+		}

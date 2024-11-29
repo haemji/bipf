@@ -1,0 +1,298 @@
+/* 참가신청 */
+
+.inquiry_wrap {display: block;
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;}
+  .inquiry_wrap .sub_tit {margin-bottom:15px; font-size:18px; text-align:left}
+  .inquiry_wrap .sub_tit>span {display:inline-block; padding-left:14px; font-size:15px; font-weight:300; color:#666} 
+  .inquiry_wrap .agree_box {padding:25px 7px 30px 25px; border:1px solid #565656; border-top: 2px solid #fffdfd; box-sizing:border-box}
+  .inquiry_wrap .agree_box.scroll {height:276px;}
+  .inquiry_wrap .agree_box.scroll>div {height:230px;}
+  .inquiry_wrap .agree_box .dl_list dt {font-size:16px; font-weight:500;}
+  .inquiry_wrap .agree_box .dl_list dd {margin-top:3px; font-size:16px; color:#666; font-weight:400;}
+  .inquiry_wrap .agree_box .dl_list dd ul {margin-top:13px}
+  .inquiry_wrap .agree_box .dl_list dd li {line-height:26px}
+  .inquiry_wrap .agree_box .dl_list dd .inlist {margin-top:2px}
+  .inquiry_wrap .agree_box .dl_list dd .inlist > li {margin-top:15px}
+  .inquiry_wrap .agree_box .dl_list dd .inlist > li:first-child {margin-top:8px}
+  .inquiry_wrap .agree_box .dl_list dd .inlist  .stit01 {display:block;}
+  .inquiry_wrap .agree_box .dl_list dd .inlist  .stit01 + ul {margin-top:4px; padding:0}
+  .inquiry_wrap .agree_box .dl_list dd .cont_desc {margin:3px 0 6px; text-indent:0}
+  
+  .inquiry_wrap .agree_box .list_1dep li.scont {margin-top:15px}
+  .inquiry_wrap .agree_box .list_1dep li.scont:first-child  {margin-top:0}
+  
+  .inquiry_wrap .agree_box .dl_list+.dl_list {margin-top:32px}
+  .inquiry_wrap .agree_box+.btn_wrap  {margin:30px 0 60px}
+  .inquiry_wrap .agree_box+.btn_wrap .btn_unit+.btn_unit {margin-left:50px; padding-left:0}
+  .inquiry_wrap .btn.big01, .inquiry_wrap .btn.big02 {min-width:180px}
+  .inquiry_wrap .tbl_form .division .tablet_only {display:inline!important; padding-left:20px}
+  .inquiry_wrap input[type="radio"],
+  input[type="checkbox"] {
+    margin: 4px 4px 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    /* display: none ; */
+
+  }
+
+  .btn_unit .inquiry_wrap input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* 자료입력 서식형 (tbl_form_wrap) */
+  .tbl_form_wrap+.btn_wrap {margin-top:40px; width: 95%;
+    max-width: 1280px;}
+  .tbl_form {border:1px solid #565656; border-top:2px solid #fffdfd}
+  .tbl_form th { padding:18px 0; font-size:16px; font-weight:500; border-top:1px solid #565656; text-align: center;}
+  .tbl_form td {padding:15px; font-size:16px; border-left:1px solid #565656; border-top:1px solid #565656}
+  .tbl_form tr:first-child th,
+  .tbl_form tr:first-child td {border-top:none}
+  .tbl_form .sel_cte {height:50px; padding:0 0 0 19px; font-size:14px; color:#666; font-weight:300; line-height:40px; border:1px solid #e3e3e3; box-sizing:border-box; background-position:90% center}
+  .tbl_form textarea {min-height:188px; padding:18px 19px; font-size:14px; color:#666; font-weight:300; box-sizing:border-box} /* 2017-11-15 */
+  .tbl_form .dash {display:inline-block; margin:0 9px; font-size:24px; color:#777; font-weight:300;}
+  .tbl_form .division>div {display:inline-block; position:relative; box-sizing:border-box}
+  .tbl_form .division.radio>div:first-child {margin-right:20px}
+  .tbl_form .bold {font-weight:500}
+  
+  table { table-layout:fixed;width:100%;padding:0;border-collapse:collapse;border-spacing:0;text-align:center; }
+  th, td { vertical-align: middle !important; }
+  
+  
+  /* btn_wrap */
+  .btn_wrap {overflow:hidden; width:100%; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; text-align:center}
+  .btn_wrap:after {content:''; clear:both; display:block}
+  /* col* = '*'는 버튼의 개수 */
+  .btn_wrap .btn_unit {display:inline; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+  
+  .btn_wrap.col2 .btn_unit:nth-child(odd) {padding:0 5px 0 0;}
+  .btn_wrap.col2 .btn_unit:nth-child(even) {padding:0 0 0 5px}
+  
+  /* radio button */
+  /*
+  input[type=radio] {border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+  */
+  input[type=radio]+label {position:relative; display:inline-block; padding-left:40px; min-height:30px; line-height:30px; background:url("/assets/img/ico_radio_off.png") no-repeat; cursor:pointer; font-size:16px; color:#666; }
+  input[type=radio].design+label {padding-left:30px; min-height:20px; line-height:20px; background:url("/assets/img/ico_radio02_off.png") no-repeat; color:#222}
+
+  .checked input[type=radio]+label {background:url("/assets/img/ico_radio_on.png") no-repeat; color:#00b1ff; font-weight:500}
+  .checked input[type=radio].design+label {background:url("/assets/img/ico_radio02_on.png") no-repeat; color:#ffffff; font-weight:300}
+  .radio_area+.radio_area {margin-left:20px}
+
+
+  *** Common ***/
+/* Scroll */
+.scroll-wrapper {position:relative;padding:0 !important;overflow:hidden !important;}
+.scroll-wrapper > .scroll-content {position:relative !important;right:0;top:0;width:auto !important;max-width:none !important;height:auto;max-height:none;margin:0;padding:0;border:none !important;box-sizing:content-box !important;overflow:scroll !important; outline:none;}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {width:0;height:0;}
+.scroll-element {display:none;}
+.scroll-element, .scroll-element div {box-sizing:content-box;}
+.scroll-element.scroll-x.scroll-scrollx_visible, .scroll-element.scroll-y.scroll-scrolly_visible {display:block;}
+.scroll-element .scroll-bar, .scroll-element .scroll-arrow {cursor:default;}
+.scroll-textarea {border:1px solid #cccccc;border-top-color:#999999;}
+.scroll-textarea > .scroll-content {overflow:hidden !important;}
+.scroll-textarea > .scroll-content > textarea {position:relative !important;top:0;width:100% !important;max-width:none !important;height:100% !important;max-height:none !important;margin:0;padding:2px;border:none !important;box-sizing:border-box;overflow:scroll !important;outline:none;}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {width:0;height:0;}
+.scrollbar-outer > .scroll-element, .scrollbar-outer > .scroll-element div {position:absolute;margin:0;padding:0;border:none;z-index:10;}
+.scrollbar-outer > .scroll-element {background:none;}
+.scrollbar-outer > .scroll-element div {display:block;right:0;top:0;width:100%;height:100%;}
+.scrollbar-outer > .scroll-element.scroll-x {left:0;bottom:0;width:100%;height:12px;background:#fff;}
+.scrollbar-outer > .scroll-element.scroll-y {right:0;top:0 !important;width:15px;height:100%;}
+.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {top:2px;height:8px;}
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {right:0;width:8px;}
+.scrollbar-outer > .scroll-element .scroll-element_outer {overflow:hidden;}
+.scrollbar-outer > .scroll-element .scroll-element_track {background:rgba(222,222,222,0.75);opacity:0;transition:opacity 0.5s 0.5s ease-out}
+.scrollbar-outer > .scroll-element:hover .scroll-element_track {opacity:1;transition-delay: 0s;}
+.scrollbar-outer > .scroll-element .scroll-element_outer, .scrollbar-outer > .scroll-element .scroll-element_track, .scrollbar-outer > .scroll-element .scroll-bar {border-radius:0;}
+.scrollbar-outer > .scroll-element .scroll-bar {background-color:rgba(0,0,0,0.5);border-radius:4px;opacity:0; transition:opacity 0.5s 1s ease-out;}
+.scrollbar-outer > .scroll-element:hover .scroll-bar {opacity:1;transition-delay:0s;}
+.scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar {background-color:#acacac;}
+.scrollbar-outer > .scroll-content.scroll-scrolly_visible {left:0;margin-left:0;outline:none;}
+.scrollbar-outer > .scroll-content.scroll-scrollx_visible {top:-12px;margin-top:12px;}
+.scrollbar-outer > .scroll-element.scroll-x .scroll-bar {min-width:10px; }
+.scrollbar-outer > .scroll-element.scroll-y .scroll-bar {min-height:10px; }
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {left:-14px;}
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {top:-14px;}
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {left:-14px;}
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {top:-14px;}
+
+.about .scrollbar-outer > .scroll-element .scroll-bar {display:none;}
+.about.ed .scrollbar-outer > .scroll-element .scroll-bar {display:block;}
+.about.ed.st .scrollbar-outer > .scroll-element .scroll-bar {opacity:1;transition:opacity 0.5s 0s ease-out;}
+
+
+@media all and (max-width:1200px){	
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {width:6px;}
+.scrollbar-outer > .scroll-element .scroll-bar {border-radius:3px;}
+}
+
+
+
+@media all and (max-width:800px){	
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {width:4px;}
+.scrollbar-outer > .scroll-element .scroll-bar {border-radius:2px;}	
+}
+
+
+
+table.board-list { width:100%; margin-top:95px; border-top:3px solid #333; }
+table.board-list th { padding:25px 0; font-size:18px; font-weight:600; color:#000; line-height:27px; border-bottom:1px solid #d5d5d5; text-align: center}
+table.board-list td { padding:25px 0; font-size:17px; color:#333; line-height:26px; text-align:center; border-bottom:1px solid #d5d5d5; border-left:1px solid #d5d5d5; }
+
+table.board-list td.subject { padding:25px 0 25px 30px; text-align:left; }
+table.board-list td a { display:block; color:#333; line-height:26px; }
+table.board-list td a:hover { color:#000; text-decoration:underline; }
+
+@media screen and (max-width:768px) {
+
+	table.state { margin-top:35px; }
+	table.state th { padding:12px 5px; font-size:13px; line-height:20px; }
+	table.state td { padding:12px 5px; font-size:13px; line-height:20px; }
+
+	table.board-list { margin-top:40px; border-top:2px solid #333; }
+	table.board-list th { padding:12px 5px; font-size:13px; line-height:20px; }
+	table.board-list td { padding:12px 5px; font-size:12px; line-height:17px; }
+	table.board-list td.subject { padding:12px 0 12px 10px; }
+	table.board-list td a { line-height:17px; }
+}
+
+
+/*
+ * jQuery File Upload Plugin CSS Example 8.8.2
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+body {margin:0;padding:0;overflow-x:hidden}
+body,input,textarea,select,button,table{font-size:12px}
+
+#pop_header{height:40px;padding:12px 0 0 20px; background:#585858}
+#pop_header h1{color:#ccc;font-size:14px;letter-spacing:-1px;margin:0;padding:0}
+
+.content_container{padding:5px 10px}
+
+.swfupload{OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert}
+
+.pop_container .drag_area{overflow:hidden;overflow-y:auto;position:relative;/*width:100%;*/height:250px;margin-top:4px;border:1px solid #eceff2}
+.pop_container .blind{visibility:hidden;position:absolute;line-height:0}
+.pop_container .drag_area .bg{position:absolute;top:0;left:0;width:100%;height:250px;background: #fdfdfd url(../../../img/photoQuickPopup/bg_drag_image.png) 50% 50% no-repeat;}
+.pop_container .drag_area .showbg{display:block}
+.pop_container .drag_area .hidebg{display:none}
+
+ul.sortable{margin:0;padding:0;zoom:1}
+ul.sortable:after{display:block;clear:both;content:""}
+
+.sortable > li{
+list-style:none;
+float: left;
+width: 220px;
+height:220px;
+overflow: hidden;
+text-align: center;
+margin: 4px 3px;  border: 1px solid #DDDDDD;padding:1px; cursor: move;
+background: #ffffff;
+}
+.sortable > li:hover, .sortable > li.ui-sortable-helper{border:2px solid #E58524;padding:0;}
+
+.sortable > li > div{
+background: #f7f7f7;
+color:#808080;
+margin:0;
+font-size:11px;
+height:220px;
+width:100%;
+overflow: hidden;
+white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis;
+position:relative;
+}
+.sortable > li > div > img{margin:3px;}
+.sortable > li > div .delete_img{position:absolute;top:0;right:0px;display:none}
+.sortable > li:hover > div .delete_img{display:block;cursor:pointer}
+.sortable > li.placeholder{
+border: dashed 2px #ccc;background-color:#FFF;padding:0;
+}
+
+.btn {
+display: inline-block;
+margin-bottom: 0;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 12px;
+line-height: 1.42857143;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.btn-success {
+color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+}
+.btn:hover, .btn:focus {
+color: #333;
+text-decoration: none;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+color: #fff;
+background-color: #47a447;
+border-color: #398439;
+}
+.seletion_explain{margin:10px 0}
+.drag_explain{position:relative;height:36px}
+.drag_explain p {padding:12px 0 0 0;margin:0;}
+.file_selet_group{position:absolute;top:0;right:0}
+.btn_group{text-align:center}
+
+
+/*
+ * jQuery File Upload Plugin CSS 1.3.0
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}

@@ -6,11 +6,11 @@
 /* Swiper */
 @import url("./plugins/swiper.min.css");
 
-/* animatatedhedline */
+/* animatedhedline */
 @import url("./plugins/jquery.animatedheadline.css");
 
 /* fancybox */
 @import url("./plugins/fancybox.css");
 
 /* Helper Class */
-@import url("./plugins/fjGallery.css");
+@import url("./global.css");
